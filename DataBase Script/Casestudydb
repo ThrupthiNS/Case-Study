@@ -19,3 +19,9 @@ isactive boolean,dob date,created_on date,pwd varchar(10));
 create table task(task_id int primary key, owner_id int,creator_id int, name varchar(20),description varchar(50),
 status varchar(10),priority varchar(10), notes varchar(50), isBookmarked boolean, created_on date,status_changed_on date,
 foreign key (owner_id) references user (user_id),foreign key (task_id) references user (user_id));
+
+//CREATING NOTIFICATION
+
+create table notification(notification_id int primary key, task_id int,owner_id int ,status varchar(10),created_on date,status_changed_on date,
+foreign key (task_id) references user (user_id),foreign key (owner_id) references user (user_id));
+
