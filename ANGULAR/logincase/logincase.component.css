@@ -1,0 +1,49 @@
+body{
+    background-image:url("../../assets/c.png");
+
+  
+      }
+      form{
+       margin: auto;
+        position: relative;
+        text-align: center;
+      }
+
+      fieldset{
+        background-color: rgb(195, 212, 238);
+        width: 30%;
+        margin: 5px auto;
+        box-shadow: 2px 2px 5px 5px #ebedef;
+        padding: 11px;
+        
+        
+      }
+      img{
+        transform: translate(565%,300%);
+      }
+
+      legend{
+				border:powderblue;
+        
+        width: 50px;
+				border-radius: 10px;
+				padding: 5px;
+				background-color: #ebedef;
+			}
+     
+
+     .btn 
+			{
+				width: 25%;
+				padding: 6px 10px;
+				cursor: pointer;
+        color: rgb(45, 49, 49);
+        background-color: paleturquoise;
+        opacity: 0.9;
+ font-size: 20px;
+			}
+
+      .btn:hover{
+        opacity: 1;
+        background-color: rgb(195, 212, 238);
+      }

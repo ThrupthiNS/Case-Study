@@ -1,0 +1,51 @@
+<body>
+
+<h1 style="background-color: #b7d3e8 ;text-align: center; font-size: 50px;">TASK TRACKING SYSTEM</h1>
+<img src="assets/d.png" width="90" height="90">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+<div style="text-align: center;">
+    
+
+
+<legend><b>LOGIN </b></legend><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>USER NAME :</b> &nbsp;
+
+     <input type="text" name="username"  formControlName="username"/>
+
+     <br/><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     <b>   PASSWORD :</b> &nbsp;
+
+     <input type="password" name="pwd"  formControlName="pwd"/>
+
+     <br/><br>
+
+    <button type = "button" class= "btn"
+
+    (click)="onSubmit(form.value)"><b>Login</b></button>
+    <br>
+    <br>
+   
+</div>
+
+    
+
+</form>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
