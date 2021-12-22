@@ -4,18 +4,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Task {
-	//private int taskid;
-	//private String taskname;
-	//private String desc;
+	
 	private int task_id;
 	private int owner_id;
 	private int creator_id;
 	private String name;
-	private String descrptn;
+	private String description;
 	private String status;
 	private String priority;
 	private String notes;
-	private boolean isBookMarked;
+	private boolean isBookmarked;
 	private String created_on;
 	private String status_changed_on;
 	public int getTask_id() {
@@ -42,11 +40,11 @@ public class Task {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getDescrptn() {
-		return descrptn;
+	public String getDescription() {
+		return description;
 	}
-	public void setDescrptn(String descrptn) {
-		this.descrptn = descrptn;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public String getStatus() {
 		return status;
@@ -66,11 +64,11 @@ public class Task {
 	public void setNotes(String notes) {
 		this.notes = notes;
 	}
-	public boolean isBookMarked() {
-		return isBookMarked;
+	public boolean isBookmarked() {
+		return isBookmarked;
 	}
-	public void setBookMarked(boolean isBookMarked) {
-		this.isBookMarked = isBookMarked;
+	public void setBookmarked(boolean isBookmarked) {
+		this.isBookmarked = isBookmarked;
 	}
 	public String getCreated_on() {
 		return created_on;
@@ -87,8 +85,8 @@ public class Task {
 	@Override
 	public String toString() {
 		return "Task [task_id=" + task_id + ", owner_id=" + owner_id + ", creator_id=" + creator_id + ", name=" + name
-				+ ", descrptn=" + descrptn + ", status=" + status + ", priority=" + priority + ", notes=" + notes
-				+ ", isBookMarked=" + isBookMarked + ", created_on=" + created_on + ", status_changed_on="
+				+ ", description=" + description + ", status=" + status + ", priority=" + priority + ", notes=" + notes
+				+ ", isBookmarked=" + isBookmarked + ", created_on=" + created_on + ", status_changed_on="
 				+ status_changed_on + "]";
 	}
 	
@@ -96,24 +94,12 @@ public class Task {
 	
 	}
 	
-//	public String getTaskname() {
-//		return taskname;
-//	}
-//	public void setTaskname(String taskname) {
-//		this.taskname = taskname;
-//	}
-//	public String getDesc() {
-//		return desc;
-//	}
-//	public void setDesc(String desc) {
-//		this.desc = desc;
-//	}
-//	public int getTaskid() {
-//		return taskid;
-//	}
-//	public void setTaskid(int taskid) {
-//		this.taskid = taskid;
-//	}
+
+	
+	
+		
+
+
 	
 	
 		
