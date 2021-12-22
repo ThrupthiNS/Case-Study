@@ -1,0 +1,28 @@
+<body>
+    <button type="button" class="btn1"(click)="home()"><b>BACK TO HOME</b></button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <fieldset>
+        <div>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+    <legend>DELETE TASK</legend><br>
+
+ <b> TASK ID :</b>
+     <input type="text" name="task_id"  formControlName="task_id"/>
+
+     <br/>
+
+     <button type = "button" class= "btn"
+
+    (click)="onSubmit(form.value)">DELETE</button>
+
+</form>
+</div>
+</fieldset>
+    
+</body>
