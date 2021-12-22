@@ -1,0 +1,65 @@
+body{
+  background-image:url("../../assets/Img2.jpg");
+   /*background-color: aqua;*/
+    }
+
+    table{
+      font-family: 'Courier New', Courier, monospace;
+      border-collapse: collapse;
+      width: 50%;
+      transform:translate(52%,-10%);
+      background-color: whitesmoke;
+      font-size: larger;
+    }
+
+    td,th{
+      border: 2px solid black;
+      padding: 8px;
+      text-align: center;
+      font-weight: 900;
+      
+    }
+
+    h1,h2{
+      background-color: white;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 270%;
+      
+    }
+    
+    .btn{
+    font: size 30px;
+    background-color: dodgerblue;
+    color: white;
+    padding: 16px 30px;
+border: none;
+width: 100%;
+opacity: 0.9;
+float: right;
+ font-size: 20px;
+				cursor: pointer;
+    }
+
+    .btn:hover{
+      opacity: 1;
+      background-color: royalblue;
+    }
+
+    .btn1{
+      font: size 30px;;
+      background-color: gray;
+      color: white;
+      padding: 16px 30px;
+  border: none;
+  width: 8%;
+  opacity: 0.9;
+  float: right;
+   font-size: 15px;
+          cursor: pointer;
+      }
+  
+      .btn1:hover{
+        opacity: 1;
+        background-color: black;
+      }
