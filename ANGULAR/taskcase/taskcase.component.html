@@ -1,0 +1,26 @@
+<body>
+    <button type="button" class="btn1"(click)="home()"><b>BACK TO HOME</b></button>
+    <h2><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DETAILS  OF  ALL  TASKS
+    </h2>
+    <br>
+<div *ngFor="let task of tasks" >&nbsp;&nbsp;
+    <div class="myid">
+   
+    TASK ID :    {{task.task_id}}<br>
+    OWNER ID :   {{task.owner_id}}<br>
+    CREATOR ID : {{task.creator_id}}<br>
+    TASK NAME :  {{task.name}}<br>
+    DESCRIPTION :{{task.description}}<br>
+    STATUS :     {{task.status}}<br>
+    PRIORITY :   {{task.priority}}<br>
+    NOTES :      {{task.notes}}<br>
+    CREATED_ON : {{task.created_on}}<br>
+    STATUS_CHANGED_ON : {{task.status_changed_on}}<br><br>
+    
+</div>
+</div>
+
+</body>
+
+   
