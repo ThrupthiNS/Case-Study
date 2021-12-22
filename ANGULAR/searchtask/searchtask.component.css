@@ -1,0 +1,49 @@
+body{
+    background-color:#b7d3e8;				
+}
+
+fieldset{
+    width: 20%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px 5px #ebedef;
+    padding: 11px;
+    background-color: white;
+}
+legend{
+    border: 1px solid #c7cbd1;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: hsl(210, 11%, 93%);
+    text-align: center;
+}
+input[type="text"]{
+    display: block;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    margin: 45px;
+}
+
+.btn {
+    
+        
+        padding: 5px;
+        cursor: pointer;
+    
+}
+.btn1{
+    font: size 30px;;
+    background-color: gray;
+    color: white;
+    padding: 16px 30px;
+border: none;
+width: 10%;
+opacity: 0.9;
+float: right;
+ font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn1:hover{
+      opacity: 1;
+      background-color: black;
+    }
