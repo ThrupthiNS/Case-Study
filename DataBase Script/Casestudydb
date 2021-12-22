@@ -1,0 +1,21 @@
+//CREATING DATABASE
+
+create database casestudydb;
+
+//SWITCHING DATABASE
+
+use casestudydb;
+
+//CREATING USER
+
+create table user(user_id int primary key,username varchar(15),email varchar(15),
+first_name varchar(15),last_name varchar(15),phone_number bigint(20),role varchar(10),
+isactive boolean,dob date,created_on date,pwd varchar(10));
+
+
+
+//CREATING TASK
+
+create table task(task_id int primary key, owner_id int,creator_id int, name varchar(20),description varchar(50),
+status varchar(10),priority varchar(10), notes varchar(50), isBookmarked boolean, created_on date,status_changed_on date,
+foreign key (owner_id) references user (user_id),foreign key (task_id) references user (user_id));
