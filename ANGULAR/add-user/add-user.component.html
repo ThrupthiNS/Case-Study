@@ -1,0 +1,76 @@
+<body>
+    <button type="button" class="btn1"(click)="home()"><b>BACK TO HOME</b></button>
+
+<fieldset>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+    <div>
+        <legend><b> ADD USER</b></legend>
+         <h1 class ="punchline">{{data}}</h1>
+
+    <b>USER ID:</b>  
+     <input type="text" name="user_id" placeholder="user_id" required="" formControlName="user_id" />
+
+    
+     
+     
+    <b> USER NAME:</b>
+     <input type="text" name="username" placeholder="username" formControlName="username"/>
+     
+     
+     <b> EMAIL:</b>
+     <input type="text" name="email" placeholder="email" formControlName="email"/>
+     
+     
+     <b> FIRST NAME:</b>
+     <input type="text" name="first_name" placeholder="first_name" formControlName="first_name"/>
+     
+     
+     <b> LAST NAME:</b>
+     <input type="text" name="last_name" placeholder="last_name" formControlName="last_name"/>
+     
+     
+
+     <b> PHONE NUMBER:</b>
+     <input type="text" name="contact_number" placeholder="contact_number" formControlName="contact_number"/>
+     
+     
+
+     <b> ROLE:</b>
+     <input type="text" name="role" placeholder="role" formControlName="role"/>
+     
+
+     
+     <b> IS ACTIVE:</b>
+     <select name="isactive" formControlName="isactive">
+         <option value="true">TRUE</option>
+         <option value="false">FALSE</option>
+     </select>
+     <br/>
+     <br/>
+     <b> DATE OF BIRTH:</b>
+     <input type="date" name="dob" placeholder="dob" formControlName="dob"/>
+     <br/>
+     <br/>
+ 
+     
+     <b> CREATED ON:</b>
+     <input type="date" name="created_on" placeholder="created_on" formControlName="created_on"/>
+     <br/>
+     <br/>
+
+     <b> PASSWORD:</b>
+     <input type="password" name="pwd" placeholder="pwd" formControlName="pwd"/>
+     
+     <br/> <br/>
+     
+     
+    <button type = "button" class= "btn "
+    (click)="onSubmit(form.value)"><b>Add</b></button>
+
+    </div>
+  
+     </form>
+    </fieldset>
+</body>
