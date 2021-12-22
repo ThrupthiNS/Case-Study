@@ -1,0 +1,46 @@
+<body>
+    <button type="button" class="btn1"(click)="home()"><b>BACK TO HOME</b></button>
+    <fieldset>
+
+<div style="text-align: center;">
+
+    <form [formGroup]="form2" (ngSubmit)="onSubmittrack(form2.value)">
+    
+        
+        <legend>TRACK THE STATUS OF THE TASK</legend>
+
+
+        <h2> <b>STATUS:</b></h2>
+        <select name="status" formControlName="status">
+            <option value="ongoing">ongoing</option>
+            <option value="Completed">Completed</option>
+            <option value="Not Started">Not Started</option>
+            <option value="pending">pending</option>
+        </select>
+
+        <br/><br/>
+     <button type = "button" class= "btn"
+        (click)="onSubmittrack(form2.value)">Check status</button>
+    
+        
+    </form>
+    
+        
+    </div>
+</fieldset>
+
+    <div *ngFor="let a of tasks">
+        taskid is {{a.task_id}}<br>
+            ownerid is {{a.owner_id}}<br/>
+            creatorid is {{a.creator_id}}<br/>
+            taskname is {{a.name}}<br/>
+            description is {{a.description}}<br/>
+            status is {{a.status}}<br/>
+            priority is {{a.priority}}<br/>
+            notes is {{a.notes}}<br/>
+            
+            created_on is {{a.created_on}}<br/>
+            status_changed_on is {{a.status_changed_on}}<br/><br>
+        </div>
+
+    </body>
