@@ -1,0 +1,30 @@
+<body>
+    <button type="button" class="btn1"(click)="home()"><b>BACK TO HOME</b></button>
+<fieldset>
+<div style="text-align: center;">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmitnotes(form.value)">
+    
+        
+        <legend><b>ASSIGNING THE TASK :</b></legend>
+        <h2> Task ID:</h2>
+        <input type="text" name="task_id"  formControlName="task_id"/>
+      <h2> OWNER ID:</h2>
+         <input type="text" name="owner_id"  formControlName="owner_id"/>
+         
+  <br><br>
+        <button type = "button" class= "btn"
+        (click)="onSubmitnotes(form.value)">Assign Task</button>
+    
+        
+    </form>
+        
+    </div>
+</fieldset>
+
+    <div *ngFor="let n of tasks">
+
+    <h3>The Task ID {{n.task_id}} is assigned to Owner ID: {{n.owner_id}}</h3>
+    </div>
+</body>
+
