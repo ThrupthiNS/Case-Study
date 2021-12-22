@@ -1,0 +1,112 @@
+<!--<div>
+    <span class="setup">Returned Id</span>
+    <h1 class="punchline">{{data}}</h1>
+
+    <button type="button" class="btn btn-success"
+    (click)="sendData()">Send Post Command</button>
+</div>-->
+<body>
+    <button type="button" class="btn1"(click)="home()"><b>BACK TO HOME</b></button>
+<fieldset>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+    <div>
+        <legend><b>ADD NEW TASK</b></legend>
+        <h1 class="punchline">{{data}}</h1>
+
+    <b>TASK ID:</b>
+     <input type="text" name="task_id" placeholder="task_id" formControlName="task_id"/>
+     
+     <br/>
+     <b>OWNER ID:</b>
+     <input type="text" name="owner_id" placeholder="owner_id" formControlName="owner_id"/>
+     
+     <br/>
+     <b>CREATOR ID:</b>
+     <input type="text" name="creator_id" placeholder="creator_id" formControlName="creator_id"/>
+     
+     <br/>
+     <b>TASK NAME:</b>
+     <input type="text" name="name" placeholder="name" formControlName="name"/>
+     
+     <br/>
+     <b>DESCRIPTION:</b>
+     <input type="text" name="description" placeholder="description" formControlName="description"/>
+     
+     <br/>
+     <b>STATUS:</b>
+     <select name="status" formControlName="status">
+         <option value="Ongoing">Ongoing</option>
+         <option value="Not Started">Not Started</option>
+         <option value="Completed">Completed</option>
+         <option value="Pending">Pending</option>
+     </select>
+     
+     <br/>
+     <br/>
+     <b> PRIORITY:</b>
+     <select name="priority" formControlName="priority">
+         <option value="High">High</option>
+         <option value="Medium">Medium</option>
+         <option value="Low">Low</option>
+     </select>
+     
+     <br/>
+     <br/>
+     <b>NOTES:</b>
+     <input type="text" name="notes" placeholder="notes" formControlName="notes"/>
+     <br/>
+     
+ 
+     <b> IS BOOKMARKED:</b>
+     <select name="isBookmarked" formControlName="isBookmarked">
+         <option value="True">True</option>
+         <option value="False">False</option>
+         
+     </select>
+     <br/>
+     <br/>
+     <b> CREATED ON:</b>
+     <input type="date" name="created_on" placeholder="created_on" formControlName="created_on"/>
+     <br/>
+     <br/>
+     <b> STATUS CHANGED ON:</b>
+     <input type="date" name="status_changed_on" placeholder="status_changed_on" formControlName="status_changed_on"/>
+     
+     <br/>
+     <br/>
+     <!--<input type="submit" [disabled]="!form.valid" value="submit"/>-->
+    <div class="center">
+     <button type="button" class="btn"
+    (click)="onSubmit(form.value)">ADD TASK</button><br>
+    </div>
+</div>
+</form>
+</fieldset>
+
+</body>
+
+    <!-- 
+taskid is {{task_id}}
+
+ownerid is {{owner_id}}
+
+creatorid is {{creator_id}}
+
+taskname is {{name}}
+
+description is {{description}}
+
+status is {{status}}
+
+priority is {{priority}}
+
+notes is {{notes}}
+
+isBookmarked is {{isBookmarked}}
+
+created_on is {{created_on}}
+
+    status_changed_on is {{status_changed_on}}
+    -->
+     
