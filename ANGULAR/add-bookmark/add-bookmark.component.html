@@ -1,0 +1,34 @@
+<body>
+    <button type="button" class="btn1"(click)="home()"><b>BACK TO HOME</b></button>
+    <fieldset>
+<div style="text-align: center;">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    
+        
+        <legend><b>ADD BOOKMARK TO THE TASK</b></legend>
+        <h2> Task ID:</h2>
+         <input type="text" name="task_id"  formControlName="task_id"/>
+         
+        <h2> Book Mark:</h2>
+        
+        <select name="isBookmarked" formControlName="isBookmarked">
+         <option value="True">True</option>
+         <option value="False">False</option>
+         
+     </select>
+     <br/><br/>
+        <button type = "button" class= "btn"
+        (click)="onSubmit(form.value)">Add BookMark</button>
+    
+        
+    </form>
+        
+    </div>
+</fieldset>
+    <div *ngFor="let n of tasks">
+
+       <h3> BookMark Added Successfully!!</h3>
+        </div>
+    
+    </body>
